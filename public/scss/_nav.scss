@@ -9,17 +9,19 @@
     .me--img {
       height: 7.5vh;
       border-radius: 100%;
-      border: 0.5vh solid #f1f6f9;
+      border: 0.3rem solid $white;
     }
 
     .me,
     .me--text {
       display: flex;
+      text-decoration: none;
     }
 
     .me--text {
       align-items: center;
-      margin: 0 1vh;
+      margin: 0 1rem;
+      font-size: $h1;
     }
   }
 
@@ -29,10 +31,12 @@
     justify-content: space-between;
 
     .nav--item {
-      margin: 0 1vh;
+      margin: 0 1rem;
+
       a {
-        h3 {
-          color: #f1f6f9;
+        h4 {
+          color: $white;
+          font-size: $h4;
         }
       }
     }
@@ -40,65 +44,86 @@
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .me--container {
-    display: flex;
-    justify-content: center;
-  }
-  .me--container .me--img {
-    object-fit: cover;
-  }
   .nav {
     justify-content: center;
     display: flex;
-  }
-  .nav--links {
-    overflow: hidden;
-    position: fixed;
-    width: 90%;
-    z-index: 2;
-    background-color: #14274e;
-    bottom: 0;
-  }
-  .nav--links .nav--item {
-    margin: 3vh 0.6vh;
-    text-align: center;
-    border-bottom: 2px solid #f1f6f9;
-    padding: 2.8vh 0.5vh;
-    width: 25%;
-  }
-  .nav--links .nav--item a h3 {
-    font-size: 1.4vh;
+
+    .me--container {
+      display: flex;
+      justify-content: center;
+
+      .me--img {
+        object-fit: cover;
+      }
+    }
+
+    .nav--links {
+      overflow: hidden;
+      position: fixed;
+      width: 100%;
+      z-index: 2;
+      background-color: $blue;
+      border: 0.3rem solid $white;
+      border-radius: 1rem 1rem 0 0;
+      bottom: 0;
+      border-bottom: none;
+
+      .nav--item {
+        margin: 1rem 0.9vw;
+        text-align: center;
+        border-bottom: 0.1rem solid $white;
+        padding: 1rem 0.8vw;
+        width: 25%;
+
+        li {
+          a {
+            h4 {
+              font-size: $h4;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
 @media (min-width: 480px) and (max-width: 640px) {
-  .me--container {
-    display: flex;
-    justify-content: center;
-  }
-  .me--container .me--img {
-    object-fit: cover;
-  }
   .nav {
     justify-content: center;
     display: flex;
-  }
-  .nav--links {
-    overflow: hidden;
-    position: fixed;
-    width: 90%;
-    z-index: 2;
-    background-color: #14274e;
-    bottom: 0;
-  }
-  .nav--links .nav--item {
-    margin: 3vh 0.6vh;
-    text-align: center;
-    border-bottom: 2px solid #f1f6f9;
-    padding: 2.8vh 0.5vh;
-    width: 11.3vh;
-  }
-  .nav--links .nav--item a h3 {
-    font-size: 2vh;
+
+    .me--container {
+      display: flex;
+      justify-content: center;
+
+      .me--img {
+        object-fit: cover;
+      }
+    }
+
+    .nav--links {
+      overflow: hidden;
+      position: fixed;
+      width: 100%;
+      z-index: 2;
+      background-color: $blue;
+      border: 0.3rem solid $white;
+      border-radius: 1rem 1rem 0 0;
+      bottom: 0;
+
+      .nav--item {
+        margin: 3vh 0.6vh;
+        text-align: center;
+        border-bottom: 0.1rem solid $white;
+        padding: 2.8vh 0.5vh;
+        width: 25%;
+
+        a {
+          h4 {
+            font-size: $h4;
+          }
+        }
+      }
+    }
   }
 }

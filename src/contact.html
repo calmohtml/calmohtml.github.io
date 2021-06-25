@@ -17,117 +17,112 @@
         <div class="me--container">
           <img src="../public/img/me.jpeg" alt="" class="me--img" />
           <a href="./index.html" class="me">
-            <h3 class="me--text">Joan Segovia</h3>
+            <h1 class="me--text">Joan Segovia</h1>
           </a>
         </div>
         <ul class="nav--links">
           <li class="nav--item">
-            <a href="index.html">
-              <h3>Me</h3>
+            <a href="aboutme.html">
+              <h4>Me</h4>
             </a>
           </li>
           <li class="nav--item">
             <a href="technologies.html">
-              <h3>Stack</h3>
+              <h4>Stack</h4>
             </a>
           </li>
           <li class="nav--item">
             <a href="projects.html">
-              <h3>Projects</h3>
+              <h4>Projects</h4>
             </a>
           </li>
           <li class="nav--item">
             <a href="contact.html">
-              <h3>Contact</h3>
+              <h4>Contact</h4>
             </a>
           </li>
         </ul>
       </nav>
-      <div>
-        <h1>Contact</h1>
-        <section class="contact">
-          <section class="singleContact">
-            <div class="singleContact__title">
-              <h3>My CV</h3>
-              <h4>All the info that you need</h4>
-            </div>
-            <div class="singleContact__img">
-              <i class="far fa-address-card"></i>
-            </div>
-            <div class="singleContact__link">
-              <a
-                target="_blank"
-                download=""
-                href="../public/media/joanSegoviaCVFrontendDeveloper.pdf"
-                ><button class="btn">Descargar</button>
-              </a>
-            </div>
-          </section>
-          <section class="singleContact">
-            <div class="singleContact__title">
-              <h3>LinkedIn</h3>
-              <h4>
-                Posts of mine, shared post, or just another way to get to me.
-              </h4>
-            </div>
-            <div class="singleContact__img">
-              <i class="fab fa-linkedin"></i>
-            </div>
-            <div class="singleContact__link">
-              <a
-                href="https://www.linkedin.com/in/segoviajoan"
-                target="_blank"
-                rel="noreferrer"
-                ><button class="btn">Link</button></a
-              >
-            </div>
-          </section>
-          <section class="singleContact">
-            <div class="singleContact__title">
-              <h3>GitHub</h3>
-              <h4>All the projects that I've made so far.</h4>
-            </div>
-            <div class="singleContact__img">
-              <i class="fab fa-github-square"></i>
-            </div>
-            <div class="singleContact__link">
-              <a
-                href="https://www.github.com/calmohtml"
-                target="_blank"
-                rel="noreferrer"
-                ><button class="btn">Link</button></a
-              >
-            </div>
-          </section>
-          <section class="singleContact">
-            <div class="singleContact__title">
-              <h3>E-Mail</h3>
-              <h4>Address: contactosegovia@protonmail.com</h4>
-            </div>
-            <div class="singleContact__img">
-              <i class="far fa-envelope"></i>
-            </div>
-            <div class="singleContact__link">
-              <a
-                href="mailto:contactosegovia@protonmail.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button class="btn">Link</button></a
-              >
-            </div>
-          </section>
+      <h1>Contact</h1>
+      <section class="contact">
+        <section class="singleContact">
+          <div class="singleContact__title">
+            <h2>My CV</h2>
+            <h3>All the info that you need</h3>
+          </div>
+          <div class="singleContact__img">
+            <i class="far fa-address-card"></i>
+          </div>
+          <div class="">
+            <a
+              target="_blank"
+              download=""
+              href="../public/media/joanSegoviaCVFrontendDeveloper.pdf"
+              class="singleContact__link"
+            >
+              <button class="btn">Link</button>
+            </a>
+          </div>
         </section>
-        <div class="start__links">
-          <ul>
-            <li>
-              <h3>Get back to start</h3>
-              <a href="index.html">
-                <button class="btn">Click here</button>
-              </a>
-            </li>
-          </ul>
+        <section class="singleContact">
+          <div class="singleContact__title">
+            <h2>LinkedIn</h2>
+            <h3>Posts of mine, or just another way to get to me.</h3>
+          </div>
+          <div class="singleContact__img">
+            <i class="fab fa-linkedin"></i>
+          </div>
+          <div class="singleContact__link">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/joansegovia"
+              rel="noreferrer"
+              class="singleContact__link"
+            >
+              <button class="btn">Link</button>
+            </a>
+          </div>
+        </section>
+        <section class="singleContact">
+          <div class="singleContact__title">
+            <h2>GitHub</h2>
+            <h3>All the projects that I've made so far</h3>
+          </div>
+          <div class="singleContact__img">
+            <i class="fab fa-github-square"></i>
+          </div>
+          <div class="singleContact__link">
+            <a
+              target="_blank"
+              href="https://www.github.com/calmohtml"
+              rel="noreferrer"
+              class="singleContact__link"
+            >
+              <button class="btn">Link</button>
+            </a>
+          </div>
+        </section>
+      </section>
+      <section class="singleContact__email">
+        <div class="singleContact__title">
+          <h2>Send me a e-mail</h2>
+          <h3>Let's talk</h3>
         </div>
+        <form action="https://formspree.io/f/xayabnbr" method="POST">
+          <input type="email" name="_replyto" placeholder="E-mail" />
+          <textarea name="message" placeholder="Message"></textarea>
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </section>
+      <div class="start__links">
+        <ul>
+          <li>
+            <h3>Get back to start</h3>
+            <a href="index.html">
+              <button class="btn">Click here</button>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </body>

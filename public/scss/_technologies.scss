@@ -1,21 +1,30 @@
+h1 {
+  font-size: $h1;
+}
+
 .technologies {
   display: grid;
-  grid-gap: 1.8vh;
+  grid-gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
-  margin: 2vh 0;
+  margin: 2rem 0;
 
   .singleTechnology {
     display: flex;
     justify-content: space-between;
-    padding: 2vh;
+    padding: 2.2rem;
     align-items: center;
-    background: #394867;
-    border: 3px solid #f1f6f9;
-    border-radius: 15px;
+    background: $lightBlue;
+    border: 0.3rem solid $white;
+    border-radius: 1.5rem;
     box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.9);
 
     h2 {
-      color: #9ba4b4;
+      color: $grey;
+      font-size: $h2;
+    }
+
+    h4 {
+      font-size: $h4;
     }
 
     .singleTechnology__description {
@@ -33,13 +42,25 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  margin: 4.7vh 0;
+  margin: 4rem 0;
+
+  ul {
+    li {
+      h3 {
+        font-size: $h3;
+      }
+    }
+  }
 }
 
 @media (min-width: 320px) and (max-width: 640px) {
   .technologies {
     grid-template-columns: 1fr;
-    grid-gap: 5vh;
+    grid-gap: 2.5rem;
+
+    .singleTechnology {
+      padding: 1rem;
+    }
   }
   .projects__links {
     margin-bottom: 15vh;
@@ -49,7 +70,11 @@
 @media (min-width: 640px) and (max-width: 1440px) {
   .technologies {
     grid-template-columns: 1fr 1fr;
-    grid-gap: 5vh;
+    grid-gap: 2.5rem;
     margin-bottom: 3vh;
+
+    .singleTechnology {
+      padding: 1rem;
+    }
   }
 }
