@@ -7,8 +7,7 @@
     display: flex;
 
     .me--img {
-      width: 19vw;
-      height: 9vh;
+      width: 17.4vw;
       border-radius: 100%;
       border: 0.3rem solid $white;
     }
@@ -98,6 +97,7 @@
       justify-content: center;
 
       .me--img {
+        width: 14vw;
         object-fit: cover;
       }
     }
@@ -124,6 +124,50 @@
             font-size: $h4;
           }
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+  .nav {
+    .me--container {
+      .me--img {
+        width: 12.4vw;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nav {
+    .me--container {
+      .me--img {
+        width: 8vw;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .nav {
+    .me--container {
+      .me--img {
+        width: 7vw;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+  .nav {
+    .me--container {
+      .me--img {
+        width: 5vw;
+        object-fit: cover;
       }
     }
   }
