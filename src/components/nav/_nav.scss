@@ -1,39 +1,45 @@
+@import "../../scss/colors";
+@import "../../scss/fonts";
+
 .nav {
   display: flex;
   margin: 2vh 0;
 
-  .me--container {
+  .me__container {
     flex: 1 1;
     display: flex;
 
-    .me--img {
-      width: 17.4vw;
+    .me__img {
+      width: 20vw;
       border-radius: 50%;
       border: 0.3rem solid $white;
     }
 
     .me,
-    .me--text {
+    .me__text {
       display: flex;
       text-decoration: none;
+      font-family: $text;
     }
 
-    .me--text {
+    .me__text {
       align-items: center;
       margin: 0 1rem;
       font-size: $h1;
     }
   }
 
-  .nav--links {
+  .nav__links {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    .nav--item {
+    .nav__item {
       margin: 0 1rem;
 
       a {
+        text-decoration: none;
+
         h4 {
           color: $white;
           font-size: $h4;
@@ -48,16 +54,16 @@
     justify-content: center;
     display: flex;
 
-    .me--container {
+    .me__container {
       display: flex;
       justify-content: center;
 
-      .me--img {
+      .me__img {
         object-fit: cover;
       }
     }
 
-    .nav--links {
+    .nav__links {
       overflow: hidden;
       position: fixed;
       width: 100%;
@@ -68,12 +74,12 @@
       bottom: 0;
       border-bottom: none;
 
-      .nav--item {
+      .nav__item {
         margin: 1rem 0.9vw;
         text-align: center;
         border-bottom: 0.1rem solid $white;
         padding: 1rem 0.8vw;
-        width: 25%;
+        width: 33%;
 
         li {
           a {
@@ -92,17 +98,17 @@
     justify-content: center;
     display: flex;
 
-    .me--container {
+    .me__container {
       display: flex;
       justify-content: center;
 
-      .me--img {
+      .me__img {
         width: 14vw;
         object-fit: cover;
       }
     }
 
-    .nav--links {
+    .nav__links {
       overflow: hidden;
       position: fixed;
       width: 100%;
@@ -112,7 +118,7 @@
       border-radius: 1rem 1rem 0 0;
       bottom: 0;
 
-      .nav--item {
+      .nav__item {
         margin: 3vh 0.6vh;
         text-align: center;
         border-bottom: 0.1rem solid $white;
@@ -131,8 +137,8 @@
 
 @media (min-width: 640px) and (max-width: 768px) {
   .nav {
-    .me--container {
-      .me--img {
+    .me__container {
+      .me__img {
         width: 12.4vw;
         object-fit: cover;
       }
@@ -142,8 +148,8 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .nav {
-    .me--container {
-      .me--img {
+    .me__container {
+      .me__img {
         width: 8vw;
         object-fit: cover;
       }
@@ -153,8 +159,8 @@
 
 @media (min-width: 1024px) and (max-width: 1440px) {
   .nav {
-    .me--container {
-      .me--img {
+    .me__container {
+      .me__img {
         width: 7vw;
         object-fit: cover;
       }
@@ -164,8 +170,8 @@
 
 @media (min-width: 1440px) and (max-width: 1920px) {
   .nav {
-    .me--container {
-      .me--img {
+    .me__container {
+      .me__img {
         width: 5vw;
         object-fit: cover;
       }

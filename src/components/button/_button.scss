@@ -1,5 +1,8 @@
+@import "../../scss/colors";
+@import "../../scss/fonts";
+
 .btn {
-  font-family: "Ubuntu", sans-serif;
+  font-family: $text;
   font-size: 3.6vh;
   cursor: pointer;
   padding: 1.5vh;
